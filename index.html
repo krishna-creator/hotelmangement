@@ -1,0 +1,170 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Hotel Management</title>
+<meta name="description" content="Ip project">
+<meta name="keywords" content="HTML, CSS, JavaScript,php">
+<meta name="author" content="krishna vamsi,yaswanth,sanjith">
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<link rel="stylesheet" type="text/css" href="dhtmlxcalendar.css"/>
+	
+<script src="dhtmlxcalendar.js"></script>
+	
+<style>
+		#calendar,
+		#calendar2
+		 	{
+			border: 1px solid #909090;
+			font-family: Tahoma;
+			font-size: 12px;
+			}
+</style>
+	<script>
+		var myCalendar;
+		function doOnLoad() 
+			{
+			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2",]);
+			}
+	</script>
+</head>
+<body onload="doOnLoad();">
+<div id="holder"><a href="https://www.co.in"><img src="images/22.jpg" width="100px" height="50px"/></a>
+	 <div id="header">
+     
+	<ul>
+    	<li><a href="login.html">Login</a></li>
+    	<li><a href="http://localhost/project/overview.html">Overview</a></li>
+    	<li><a href="http://localhost/project/rest/index.html">Restaurant</a></li>
+    	<li><a href="book.html">Booking</a></li>
+        <li><a href="index.html">Home</a></li>
+    	</ul>
+    </div><!--header -->
+	<br> 
+    <div id="ab">
+    <div id="check">
+    <br>
+	<form action="check.php" method="post">
+		<div style="position:relative;height:80px;">
+		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            		<input id="calendar" name="in" placeholder="2021-06-02" required="" type="text"> <br><br>
+		
+		<label for="in">Check out:</label> &nbsp;&nbsp;
+            		<input id="calendar2" name="out" placeholder="2021-06-05" required="" type="text"> <br><br>
+		
+		</div>
+			Room Type:
+                <select name="room">
+                    <option value="A/C">A/C</option>
+        			<option value="Non-A/C">Non-A/C</option>
+                </select>
+                <select name="type">
+                    <option value="single">Single</option>
+					<option value="double">Double</option>
+                    <option value="three">Three</option>
+                </select>
+	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" name="submit" value="submit" />
+	<input type="reset" name="reset" value="Reset" />
+</form>
+   </div><!--chack -->
+   &nbsp;
+	<br>
+	<br>
+    <div id="fd"> 
+				<form action="feedback.php" method="post">
+				<label for="in">Feedback</label> 
+					<input id="fd" name="feed" placeholder="Type message" required=""> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" name="submit" value="submit" />
+				</form>
+	</div><!--fd-->
+	</div><!--ab-->
+        <br clear="all"/>
+ 	<div id="ac">
+    	<h1>A/C</h1>
+    		<div class="block">
+				<img class="img" src="images/1.jpg" alt="">
+				<div class="subblock">
+					Single room Rs.2500
+                <a href="video.html"><input type="submit" value="View"></a>
+           	<a href="book.html"><input type="submit" value="Booking"></a>
+				</div>
+        	</div><!--a-->
+        	<div class="block">
+				<img class="img" src="images/2.jpg" alt="">
+				<div class="subblock">
+					Double Rs.3000
+                <a href="video.html"><input type="submit" value="View"></a>
+           		<a href="book.html"><input type="submit" value="Booking"></a>
+				</div>
+        	</div><!--b-->
+        	<div class="block">
+				<img class="img" src="images/3.jpg" alt="">
+				<div class="subblock">
+					Thriple Rs.5500
+               <a href="video.html"><input type="submit" value="View"></a>
+               <a href="book.html"><input type="submit" value="Booking"></a>	
+				</div>
+        	</div><!--c-->
+          </div><!--ac-->
+   
+    <div id="offer">
+    	<h1 style="width: 250px;margin: 10px 0;">Special Offers</h1>
+        	<div id="a1"><p>&nbsp;</p>
+            <br><br>
+      			  Single Bed<br>
+      			  Three Booking<br>For <b>5</b>% discount
+    		</div><!--a1-->
+            <div id="b1"><p>&nbsp;</p><br>
+           <br>
+      			  Double Bed<br>
+      			  Three Booking<br> For <b>10</b>% discount
+    		</div><!--b1-->
+            <div id="c1"><p>&nbsp;</p><br>
+            <br>
+      			  Three Bed<br>
+      			  Three Booking<br> For <b>15</b>% discount
+    		</div><!--c1-->
+    </div><!--offer-->
+    <div id="nonac">
+    	<h1>Non-A/C</h1>
+        	<div class="block">
+				<img class="img" src="images/4.jpg" alt="">
+				<div class="subblock">
+           		Single room Rs.1000
+                <a href="video.html"><input type="submit" value="View"></a>
+           		<a href="book.html"><input type="submit" value="Booking"></a>
+				</div>	
+        	</div><!--a2-->
+        	<div class="block">
+				<img class="img" src="images/5.jpg" alt="">
+				<div class="subblock">
+				Double Rs.2000
+                <a href="video.html"><input type="submit" value="View"></a>
+           		 <a href="book.html"><input type="submit" value="Booking"></a>
+				</div>
+        	</div><!--b2-->
+        	<div class="block">
+				<img class="img" src="images/6.jpg" alt="">
+				<div class="subblock">
+					Thriple Rs.3500
+                <a href="video.html"><input type="submit" value="View"></a>
+                <a href="book.html"><input type="submit" value="Booking"></a>	
+				</div>
+        	</div><!--c2-->
+    </div><!--nonac-->
+	<!-- <div id="rest">
+    	<h1>Special Dishes</h1>
+        	<div id="a3">
+            </div>
+            <div id="b3">
+		<a href="#"></a>
+            </div>
+            <div id="c3">
+            </div>
+	</div>rest -->
+</div><!--holder -->
+</body>
+</html>
